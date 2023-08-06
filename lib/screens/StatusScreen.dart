@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/buildStatusTile.dart';
+
 class StatusPage extends StatefulWidget {
   const StatusPage({super.key});
 
@@ -53,23 +55,6 @@ class _StatusPageState extends State<StatusPage> {
           return buildStatusTile(statusUpdates[index]);
         },
       ),
-    );
-  }
-
-  Widget buildStatusTile(String status) {
-    return ListTile(
-      leading: const CircleAvatar(
-        radius: 30,
-        backgroundImage: AssetImage('assets/images/BEBO.jpg'),
-      ),
-      title: Text(
-        status,
-        style: const TextStyle(
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-      subtitle: const Text("3 minutes ago"),
-      onTap: () {},
     );
   }
 }
