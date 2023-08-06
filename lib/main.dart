@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whats_app/HomeLayout/home_layout.dart';
+import 'package:whats_app/screens/home_layout.dart';
 
 void main() {
   runApp(const MyApp());
